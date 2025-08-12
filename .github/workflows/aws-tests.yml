@@ -150,7 +150,7 @@ jobs:
         exclude:
           # skip the ARM integration tests in forks, and also if not on main/upgrade-dependencies and forceARMTests is not set to true
           # TODO ARM runners are not yet available for private repositories; skip them for potential private forks
-          - runner: ${{ ((github.repository != 'localstack/localstack') || (github.ref != 'refs/heads/main' && !startsWith(github.ref, 'refs/tags/v') && github.ref != 'upgrade-dependencies' && inputs.forceARMTests == false)) && 'ubuntu-24.04-arm' || ''}}
+          - runner: ${{ ((github.ref != 'refs/heads/main' && !startsWith(github.ref, 'refs/tags/v') && github.ref != 'upgrade-dependencies' && inputs.forceARMTests == false)) && 'ubuntu-24.04-arm' || ''}}
       fail-fast: false
     runs-on: ${{ matrix.runner }}
     steps:
@@ -338,7 +338,7 @@ jobs:
         exclude:
           # skip the ARM integration tests in forks, and also if not on main/upgrade-dependencies and forceARMTests is not set to true
           # TODO ARM runners are not yet available for private repositories; skip them for potential private forks
-          - runner: ${{ ((github.repository != 'localstack/localstack') || (github.ref != 'refs/heads/main' && !startsWith(github.ref, 'refs/tags/v') && github.ref != 'upgrade-dependencies' && inputs.forceARMTests == false)) && 'ubuntu-24.04-arm' || ''}}
+          - runner: ${{ ((github.ref != 'refs/heads/main' && !startsWith(github.ref, 'refs/tags/v') && github.ref != 'upgrade-dependencies' && inputs.forceARMTests == false)) && 'ubuntu-24.04-arm' || ''}}
       fail-fast: false
     runs-on: ${{ matrix.runner }}
     env:
@@ -497,7 +497,7 @@ jobs:
         exclude:
           # skip the ARM integration tests in forks, and also if not on main/upgrade-dependencies and forceARMTests is not set to true
           # TODO ARM runners are not yet available for private repositories; skip them for potential private forks
-          - arch: ${{ ((github.repository != 'localstack/localstack') || (github.ref != 'refs/heads/main' && !startsWith(github.ref, 'refs/tags/v') && github.ref != 'upgrade-dependencies' && inputs.forceARMTests == false)) && 'arm64' || ''}}
+          - arch: ${{ ((github.ref != 'refs/heads/main' && !startsWith(github.ref, 'refs/tags/v') && github.ref != 'upgrade-dependencies' && inputs.forceARMTests == false)) && 'arm64' || ''}}
     needs:
       - test-integration
       - test-bootstrap
@@ -543,7 +543,7 @@ jobs:
         exclude:
           # skip the ARM integration tests in forks, and also if not on main/upgrade-dependencies and forceARMTests is not set to true
           # TODO ARM runners are not yet available for private repositories; skip them for potential private forks
-          - runner: ${{ ((github.repository != 'localstack/localstack') || (github.ref != 'refs/heads/main' && !startsWith(github.ref, 'refs/tags/v') && github.ref != 'upgrade-dependencies' && inputs.forceARMTests == false)) && 'ubuntu-24.04-arm' || ''}}
+          - runner: ${{ ((github.ref != 'refs/heads/main' && !startsWith(github.ref, 'refs/tags/v') && github.ref != 'upgrade-dependencies' && inputs.forceARMTests == false)) && 'ubuntu-24.04-arm' || ''}}
       fail-fast: false
     runs-on: ${{ matrix.runner }}
     env:
@@ -618,7 +618,7 @@ jobs:
         exclude:
           # skip the ARM integration tests in forks, and also if not on main/upgrade-dependencies and forceARMTests is not set to true
           # TODO ARM runners are not yet available for private repositories; skip them for potential private forks
-          - arch: ${{ ((github.repository != 'localstack/localstack') || (github.ref != 'refs/heads/main' && !startsWith(github.ref, 'refs/tags/v') && github.ref != 'upgrade-dependencies' && inputs.forceARMTests == false)) && 'arm64' || ''}}
+          - arch: ${{ ((github.ref != 'refs/heads/main' && !startsWith(github.ref, 'refs/tags/v') && github.ref != 'upgrade-dependencies' && inputs.forceARMTests == false)) && 'arm64' || ''}}
     needs:
       - test-acceptance
     runs-on: ubuntu-latest
