@@ -7799,6 +7799,7 @@ AWS_AVAILABLE_CFN_RESOURCES = {
     ],
     "AWS::EC2::RouteServer": [
         "ap-northeast-1",
+        "ap-southeast-1",
         "ap-southeast-2",
         "ca-central-1",
         "eu-central-1",
@@ -7812,6 +7813,7 @@ AWS_AVAILABLE_CFN_RESOURCES = {
     ],
     "AWS::EC2::RouteServerAssociation": [
         "ap-northeast-1",
+        "ap-southeast-1",
         "ap-southeast-2",
         "ca-central-1",
         "eu-central-1",
@@ -7825,6 +7827,7 @@ AWS_AVAILABLE_CFN_RESOURCES = {
     ],
     "AWS::EC2::RouteServerEndpoint": [
         "ap-northeast-1",
+        "ap-southeast-1",
         "ap-southeast-2",
         "ca-central-1",
         "eu-central-1",
@@ -7838,6 +7841,7 @@ AWS_AVAILABLE_CFN_RESOURCES = {
     ],
     "AWS::EC2::RouteServerPeer": [
         "ap-northeast-1",
+        "ap-southeast-1",
         "ap-southeast-2",
         "ca-central-1",
         "eu-central-1",
@@ -7851,6 +7855,7 @@ AWS_AVAILABLE_CFN_RESOURCES = {
     ],
     "AWS::EC2::RouteServerPropagation": [
         "ap-northeast-1",
+        "ap-southeast-1",
         "ap-southeast-2",
         "ca-central-1",
         "eu-central-1",
@@ -16064,6 +16069,7 @@ AWS_AVAILABLE_CFN_RESOURCES = {
     ],
     "AWS::NeptuneGraph::Graph": [
         "ap-northeast-1",
+        "ap-south-1",
         "ap-southeast-1",
         "eu-central-1",
         "eu-west-1",
@@ -16074,6 +16080,7 @@ AWS_AVAILABLE_CFN_RESOURCES = {
     ],
     "AWS::NeptuneGraph::PrivateGraphEndpoint": [
         "ap-northeast-1",
+        "ap-south-1",
         "ap-southeast-1",
         "eu-central-1",
         "eu-west-1",
@@ -16525,6 +16532,10 @@ AWS_AVAILABLE_CFN_RESOURCES = {
         "us-east-1",
         "us-west-2",
     ],
+    "AWS::ODB::OdbPeeringConnection": [
+        "us-east-1",
+        "us-west-2",
+    ],
     "AWS::OSIS::Pipeline": [
         "ap-northeast-1",
         "ap-northeast-2",
@@ -16582,6 +16593,8 @@ AWS_AVAILABLE_CFN_RESOURCES = {
     ],
     "AWS::ObservabilityAdmin::OrganizationTelemetryRule": [
         "ap-northeast-1",
+        "ap-northeast-2",
+        "ap-northeast-3",
         "ap-south-1",
         "ap-southeast-1",
         "ap-southeast-2",
@@ -16599,6 +16612,8 @@ AWS_AVAILABLE_CFN_RESOURCES = {
     ],
     "AWS::ObservabilityAdmin::TelemetryRule": [
         "ap-northeast-1",
+        "ap-northeast-2",
+        "ap-northeast-3",
         "ap-south-1",
         "ap-southeast-1",
         "ap-southeast-2",
@@ -16808,6 +16823,8 @@ AWS_AVAILABLE_CFN_RESOURCES = {
     ],
     "AWS::OpenSearchService::Application": [
         "ap-northeast-1",
+        "ap-northeast-2",
+        "ap-northeast-3",
         "ap-south-1",
         "ap-southeast-1",
         "ap-southeast-2",
@@ -16820,6 +16837,7 @@ AWS_AVAILABLE_CFN_RESOURCES = {
         "sa-east-1",
         "us-east-1",
         "us-east-2",
+        "us-west-1",
         "us-west-2",
     ],
     "AWS::OpenSearchService::Domain": [
